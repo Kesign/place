@@ -1,0 +1,113 @@
+nav
+{
+position: fixed;
+width: 100%;
+height: 15vh;
+transition: 0.3s;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 99;
+}
+
+nav p
+{
+position: absolute;
+top: 50%;
+left: 50%;
+color: #FFFFFF;
+font-size: 4vw;
+transform: translate(-50%, -50%);
+}
+
+#logo
+{
+position: absolute;
+height: 60%;
+top: 50%;
+left: 1vw;
+transform: translate(0, -50%);
+}
+
+span
+{
+position: relative;
+float: right;
+font-size:3vw;
+top: 50%;
+right: 1.5vw;
+font-weight: bold;
+color: #FFFFFF;
+cursor: pointer;
+padding: 0 0 0 2vw;
+transform: translate(0, -50%);
+}
+
+.nav
+{
+position: fixed;
+height: 100%;
+width: 0;
+top: 0;
+right: 0;
+overflow-x: hidden;
+transition: 0.5s;
+padding: 10vh 0 0 0;
+background-color: rgba(0, 0, 0, 0.9);
+z-index: 99;
+}
+
+.nav::-webkit-scrollbar
+{
+display: none;
+}
+
+.closebtn
+{
+position: absolute;
+top: 0;
+right: 1vw;
+font-size: 4vw;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+#search
+{
+position: absolute;
+height: 100vh;
+width: 100%;
+}
+
+#input
+{
+position: relative;
+display: block;
+margin: 0 auto 0 auto;
+width: 60%;
+font-size: 1.8vw;
+padding: 11px;
+border-radius: 15px;
+border: none;
+outline: none;
+padding: 1vh 20px;
+}
+
+#menu
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#menu li a
+{
+padding: 1.5vh 0 1.5vh 0;
+text-decoration: none;
+text-align: center;
+color: white;
+font-size: 1.8vw;
+display: block
+}
+
+@media screen and (max-width: 900px)
+{
+}
