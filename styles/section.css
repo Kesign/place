@@ -1,0 +1,19 @@
+#sec1, #sec2
+{
+height: calc(100vh/2);
+width: 100%;
+}
+#sec1 h1, #sec2 h2
+{
+text-align: center;
+width: 100%;
+font-size: 3vw;
+padding: 2vh 0 2vh 0;
+color: #002D43;
+}
+section p
+{
+font-size: 2vw;
+text-align: justify;
+padding: 1vh 4vw 0 4vw;
+}

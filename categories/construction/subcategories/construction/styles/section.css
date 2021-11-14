@@ -1,0 +1,71 @@
+section
+{
+position: relative;
+height: 100vh;
+width: 100%;
+}
+
+.vpag
+{
+position: relative;
+width: calc(100%/2);
+top: 15vh;
+height: 85vh;
+float: left;
+overflow: auto;
+}
+.tpag
+{
+position: relative;
+width: 100%;
+text-align: center;
+font-size: 2.5vw;
+padding: 2vh 0 2vh 0;
+border-bottom: dashed black 2px;
+}
+.rpag
+{
+position: relative;
+display: block;
+margin: 5vh auto 5vh auto;
+width: 70%;
+height: 70vh;
+border-radius: 15px;
+border: solid #002D43 2px;
+}
+.dim
+{
+position: relative;
+display: block;
+margin: 0 auto 0 auto;
+width: 100%;
+height: 85%;
+}
+	.dim img
+	{
+	position: absolute;
+	height: 60%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+.dd
+{
+position: relative;
+float: left;
+width: calc(100%/2);
+height: 15%;
+font-size: 2vw;
+}
+	.dd p
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+	.dd img
+	{
+	width: 20%;
+	margin: 0 1vw 0 0;
+	}
