@@ -1,0 +1,419 @@
+.divcon
+{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 95%;
+height: 90%;
+transform: translate(-50%, -50%);
+border: solid #9D8A79 2px;
+overflow: auto;
+}
+.divconn
+{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 95%;
+height: 90%;
+transform: translate(-50%, -50%);
+border: solid #9D8A79 2px;
+overflow: hidden;
+}
+.divcon::-webkit-scrollbar
+{
+height: 10px;
+width: 10px;
+background: transparent;
+}
+.divcon::-webkit-scrollbar-thumb
+{
+background: #9D8A79;
+border-radius: 5px;
+}
+
+#somos, #especialidades, #trabajos, #clientes, #mision, #filosofia, #contacto
+{
+position: relative;
+height: 100vh;
+width: 100%;
+background-color: #262626;
+z-index: 1;
+}
+
+.colorimg
+{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+/*background-color: rgba(157, 138, 121, 1.0);*/
+background-color: rgba(0, 0, 0, 1.0);
+z-index: 98;
+}
+
+/*Somos*/
+	#ds2
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	}
+	#ds2 h2, #ds2 p
+	{
+	position: relative;
+	margin: 0 auto 0 auto;
+	color: #FFFFFF;
+	}
+	#ds2 h2
+	{
+	width: 100%;
+	text-align: center;
+	font-size: 4vw;
+	margin: 0 0 5vh 0;
+	font-weight: 600;
+	}
+	#ds2 p
+	{
+	font-weight: 400;
+	width: 75%;
+	text-align: justify;
+	font-size: 2vw;
+	}
+
+/*especialidades*/
+	#especialidades
+	{
+	height: 100vh;
+	}
+	.dde, .ddie
+	{
+	position: relative;
+	height: 100%;
+	}
+	.dde
+	{
+	width: 70%;
+	float: right;
+	}
+		.dde p
+		{
+		position: relative;
+		width: 100%;
+		color: #FFFFFF;
+		font-size: 4vw;
+		text-align: center;
+		padding: 4vh 0 4vh 0;
+		}
+		.dde ul
+		{
+		position: relative;
+		width: 100%;
+		padding: 0 0 0 5vw;
+		}
+		.dde li
+		{
+		width: 100%;
+		color: #FFFFFF;
+		font-size: 2vw;
+		text-align: left;
+		padding: 1.5vh 0 1.5vh 0;
+		}
+	.ddie
+	{
+	width: 30%;
+	background-color: rgba(157, 138, 121, 0.3);
+	float: left;
+	}
+		.ddie img
+		{
+		position: relative;
+		top: 50%;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		transform: translate(0,-50%);
+		filter: contrast(140%);
+		z-index: -1;
+		}
+
+/*trabajos*/
+	#trabajos
+	{
+	height: 255vh;
+	}
+	.tt
+	{
+	width: 100%;
+	text-align: center;
+	padding: 2vh 0;
+	font-size: 4.5vw;
+	color: white;
+	}
+	/*Universal Content Before*/
+		.row
+		{
+		position: relative;
+		overflow: auto;
+		}
+		.row div
+		{
+		position: relative;
+		float: left;
+		width: calc(100%/4.2);
+		height: 40vh;
+		border-radius: 15px;
+		border: solid #9D8A79 2px;
+		overflow: hidden;
+		margin: 1vh 0.5vw;
+		padding: 0;
+		}
+		.row img
+		{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 100%;
+		transform: translate(-50%, -50%);
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 15px;
+		filter: brightness(80%);
+		}
+		.row img:hover
+		{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+	/* Universal Content After*/
+		.modal
+		{
+		position: fixed;
+		display: none;
+		top: 70vh;
+		bottom: 0;
+		left: 0;
+		padding: 0;
+		width: 100%;
+		height: 158.6vh;
+		background-color: black;
+		overflow: auto;
+		z-index: 1;
+		}
+
+	/*Image position after*/
+		.column
+		{
+		position: relative;
+		float: left;
+		width: calc(100%/4.2);
+		margin: 0;
+		height: 40vh;
+		top: 0;
+		border-radius: 15px;
+		margin: 1vh 0.5vw;
+		width: calc(100%/4.2);
+		border: solid #9D8A79 2px;
+		overflow: hidden;
+		}
+			.column img
+			{
+			position: absolute;
+			opacity: 0.6;
+			cursor: pointer;
+			height: 100%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			border-radius: 15px;
+			border: solid black 4px;
+			}
+			.column img:hover
+			{
+			opacity: 1;
+			}
+
+	/*Big image after*/
+		.slides
+		{
+		position: fixed;
+		top: 0;
+		display: none;
+		margin: 0;
+		padding: 0;
+		background-color: transparent;
+		margin: 0 auto 0 auto;
+		width: 100%;
+		height: 70vh;
+		background-color: rgb(0, 0, 0);
+		z-index: 5;
+		}
+			.slides img
+			{
+			position: relative;
+			display: block;
+			margin: 0 auto 0 auto;
+			border-radius: 15px;
+			height: 100%;
+			}
+
+	/* The Close Button */
+		.close
+		{
+		position: fixed;
+		color: white;
+		top: 0;
+		right: 1vw;
+		font-size: 5vw;
+		font-weight: bold;
+		cursor: pointer;
+		z-index: 6;
+		}
+			.close:hover
+			{
+			color: #999;
+			}
+
+	/* Next & previous buttons */
+		.prev, .next
+		{
+		position: fixed;
+		top: 20%;
+		transform: translate(0, -50%);
+		cursor: pointer;
+		width: auto;
+		color: white;
+		padding: 0 1vw 0 1vw;
+		font-weight: bold;
+		font-size: 4vw;
+		transition: 0.3s ease;
+		z-index: 6;
+		}
+		.next
+		{
+		right: 0;
+		}
+
+/*clientes*/
+	#clientes
+	{
+	height: 50vh;
+	}
+	#clientes p
+	{
+	text-align: center;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 5.5vw;
+	}
+	#clientes marquee
+	{
+	height: 30vh;
+	width: 100%;
+	}
+	marquee a
+	{
+	position: relative;
+	height: 40vh;
+	width: calc(100%/10);
+	float: left;
+	margin: 0 1vw 0 1vw;
+	}
+	marquee img
+	{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translate(0, -50%);
+	}
+
+/*mision*/
+	.dm
+	{
+	position: relative;
+	height: 100%;
+	width: calc(100%/2);
+	float: left;
+	}
+	.dm p
+	{
+	position: absolute;
+	text-align: justify;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 2vw;
+	padding: 0 1.5vw 0 1.5vw;
+	transform: translate(-50%, -50%);
+	}
+	.l
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 70%;
+	color: #FFFFFF;
+	border: solid #9D8A79 2px;
+	transform: translate(-50%, -50%);
+	}
+
+/*filosofia*/
+	#filosofia p
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	color: #FFFFFF;
+	font-size: 2.5vw;
+	text-align: justify;
+	transform: translate(-50%, -50%);
+	}
+
+/*contacto*/
+#contacto
+{
+overflow: hidden;
+}
+.cond
+{
+float: left;
+width: calc(100%/2);
+height: 100%;
+}
+.cont, .const
+{
+width: 100%;
+text-align: center;
+font-size: 2vw;
+color: #FFFFFF;
+}
+.contt
+{
+width: 100%;
+text-align: center;
+font-size: 3vw;
+color: #FFFFFF;
+padding: 4.5vh 0;
+}
+.conp
+{
+width: 100%;
+text-align: justify;
+font-size: 1.8vw;
+padding: 0 1.5vw 0 1.5vw;
+color: #FFFFFF;
+margin: 2vh 0;
+}
+.map
+{
+position: relative;
+margin: 0 auto;
+display: block;
+width: 80%;
+height: 50vh;
+border: none;
+}

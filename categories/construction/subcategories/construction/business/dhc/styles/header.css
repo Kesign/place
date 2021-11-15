@@ -1,0 +1,76 @@
+header
+{
+position: relative;
+height: 100vh;
+width: 100%;
+overflow: hidden;
+}
+
+header video
+{
+position: fixed;
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: brightness(40%);
+z-index: -1;
+}
+
+#divhead
+{
+position: absolute;
+width: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+	#divhead h1, #divhead p
+	{
+	position: relative;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0 auto 0 auto;
+	}
+	#divhead h1
+	{
+	width: 100%;
+	font-size: 8vw;
+	}
+	#divhead p
+	{
+	width: 50%;
+	font-size: 4vw;
+	}
+
+
+/*Responsive*/
+	@media screen and (max-width: 900px)
+	{
+		header
+		{
+		height: 100vh;
+		}
+	}
+	@media screen and (max-width: 700px)
+	{
+		header
+		{
+		height: 100vh;
+		}
+		header h1
+		{
+		top: 40%;
+		left: 50%;
+		width: 55%;
+		font-size: 8vw;
+		color: #FFFFFF;
+		}
+	}
+	@media screen and (max-width: 400px)
+	{
+		header h1
+		{
+		width: 70%;
+		font-size: 10vw;
+		}
+	}
